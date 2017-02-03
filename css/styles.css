@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 1s; }
+
+body {
+  background-color: #feffe3; }
+
+header {
+  width: 100%;
+  padding: 35px;
+  background-color: black;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  opacity: .9; }
+  header nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  header .logo {
+    color: #A5A5A5;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px; }
+    header .logo:hover {
+      color: royalblue;
+      margin-left: 45px;
+      cursor: pointer; }
+  header a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px; }
+    header a:hover {
+      text-decoration: none;
+      background-color: royalblue;
+      color: black; }
+
+.container {
+  margin-top: 120px; }
+
+.jumbotron {
+  text-align: center; }
+  .jumbotron h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #4C4B4B; }
+
+section form {
+  margin: 0; }
+
+#primaryDiv {
+  border: #254100 2px solid;
+  background-color: #44631b;
+  height: 100px;
+  width: auto; }
+
+main {
+  background-color: white;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  font-size: 16px;
+  margin-top: 30px; }
+
+#movies {
+  width: 170px;
+  color: #52B7CD;
+  font-weight: bold;
+  margin: 20px; }
+  #movies img {
+    margin-bottom: 15px; }
+  #movies span {
+    color: #464646;
+    font-weight: normal;
+    font-size: 13px; }
+
+form {
+  text-align: center;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 1060px) {
+  header {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 15px; } }
+
+@media screen and (max-width: 830px) {
+  header nav {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+  header .logo {
+    font-size: 21px;
+    margin-left: 0;
+    margin-bottom: 15px; }
+  header a {
+    font-size: 15px;
+    padding: 5px; }
+  .container {
+    margin-top: 200px; }
+  h1 {
+    font-size: 22px; } }

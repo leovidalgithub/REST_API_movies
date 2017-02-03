@@ -1,0 +1,7 @@
+<main>
+	<div id="movies" ng-repeat="(key, value) in moviesArray">
+		<img class="img-responsive" src="https://image.tmdb.org/t/p/w500/{{value.poster_path}}">
+		{{ value.title }}<br>
+		<span>from: {{value.release_date}}</span>
+	</div>
+</main>

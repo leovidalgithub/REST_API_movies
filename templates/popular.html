@@ -1,0 +1,10 @@
+<button class="btn btn-primary btn-lg" ng-click="fn1()">DALE 1 !!!</button>
+<button class="btn btn-danger btn-lg" ng-click="fn2()">DALE 2 !!!</button>
+{{ datos }}
+<main>
+	<div id="movies" ng-repeat="(key, value) in moviesArray">
+		<img class="img-responsive" src="https://image.tmdb.org/t/p/w500/{{value.poster_path}}">
+		{{ value.title }}<br>
+		<span>from: {{value.release_date}}</span>
+	</div>
+</main>

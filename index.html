@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="appMovie" lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Angular API Movies</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header ng-controller="indexController">
+		<div ng-click="home()" class="logo">Movie Collection</div>
+		<nav>
+			<a href="#/popular">Popular Movies</a>
+			<a href="#/upcoming">Upcoming Movies</a>
+			<a href="#/nowplaying">Now Playing Movies</a>
+			<a href="#/top_rated">Top Rated Movies</a>
+		</nav>
+</header>
+<div class="container">
+
+	<h2>Variable status -- {{variable}}</h2>
+	<div id="primaryDiv" ng-show="variable">
+		<p>COJO CULO Y PAGO CON CHAPA !!!</p>		
+	</div>
+
+
+
+	<div ng-include="'templates/header.html'"></div>
+	<div ng-view></div>
+</div>
+
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/appMovie.js"></script>
+	<script src="js/mainControllers.js"></script>
+	<script src="js/routing.js"></script>
+	<script src="js/jquery.min.js"></script>
+
+</body>
+</html>
